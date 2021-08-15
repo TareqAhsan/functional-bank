@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-700">
+    <header>
+      <h1 class="text-5xl text-center mt-16 font-semibold uppercase">
+        get some <span class="text-yellow-600">money</span>
+      </h1>
+    </header>
+    <main class="w-3/4 mx-auto container align">
+      <section class="mt-16 bg-gray-600 container p-4 rounded-xl w-3/4 mx-auto">
+        <div
+          class="
+            grid grid-cols-1
+            md:grid-cols-1
+            lg:grid-cols-3
+            gap-5
+            text-white
+            uppercase
+          "
+        >
+          <div
+            class="
+              bg-purple-600
+              hover:bg-purple-800
+              rounded-lg
+              shadow-lg
+              px-4
+              py-5
+              text-center
+            "
+          >
+            <h3 class="text-3xl">deposit</h3>
+            <h2 class="text-4xl">$ <span id="deposite-amount">00</span></h2>
+          </div>
+          <div
+            class="
+              bg-purple-600
+              hover:bg-purple-800
+              rounded-lg
+              px-4
+              py-5
+              text-center
+              shadow-lg
+            "
+          >
+            <h3 class="text-3xl">Withdraw</h3>
+            <h2 class="text-4xl">$ <span id="withdraw-amount">00</span></h2>
+          </div>
+          <div
+            class="
+              bg-purple-600
+              hover:bg-purple-800
+              rounded-lg
+              px-4
+              py-5
+              text-center
+              shadow-lg
+            "
+          >
+            <h3 class="text-3xl">Total</h3>
+            <h2 class="text-4xl">$ <span id="total-bal">1240</span></h2>
+          </div>
+        </div>
+        <div
+          class="
+            grid grid-cols-1
+            md:grid-cols-1
+            lg:grid-cols-2
+            gap-5
+            text-white
+            mt-16
+            p-4
+          "
+        >
+          <div class="bg-indigo-500 rounded-lg p-4 text-center">
+            <h2 class="text-2xl mb-3 uppercase font-semibold">
+              please deposit
+            </h2>
+            <input
+              id="deposit-input"
+              type="text"
+              placeholder="Enter your deposite"
+              class="
+                text-black
+                w-3/4
+                inline-block
+                rounded
+                px-4
+                py-2
+                border-transparent
+                focus:outline-none
+                focus:ring-2
+                focus:ring-purple-600
+                focus:border-transparent
+              "
+            />
+
+            <button
+              id="deposit-btn"
+              class="
+                bg-indigo-700
+                px-6
+                py-2
+                mt-4
+                w-3/4
+                rounded
+                uppercase
+                font-semibold
+                hover:bg-indigo-800
+              "
+            >
+              deposit
+            </button>
+          </div>
+
+          <div class="bg-blue-600 rounded-lg p-4 text-center">
+            <h2 class="text-2xl mb-3 font-semibold">Withdraw</h2>
+            <input
+              id="withdraw-input"
+              placeholder="Enter amount to withdraw"
+              type="text"
+              class="
+                text-black
+                inline-block
+                w-3/4
+                rounded
+                px-4
+                py-2
+                border-transparent
+                focus:outline-none
+                focus:ring-2
+                focus:ring-purple-600
+                focus:border-transparent
+              "
+            />
+
+            <button
+              id="withdraw-btn"
+              class="
+                bg-gray-600
+                rounded
+                w-3/4
+                px-6
+                py-2
+                mt-4
+                font-semibold
+                uppercase
+                hover:bg-gray-700
+              "
+            >
+              Withdraw
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="js/banking.js"></script>
+  </body>
+</html>
