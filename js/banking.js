@@ -1,44 +1,44 @@
-document.getElementById('deposit-btn').addEventListener('click',function () {
-    const depositinputField = document.getElementById('deposit-input');
-    const depositInputText = depositinputField.value;
-    const depositInputTextParse = parseFloat(depositInputText);
 
-    const totalDepositField = document.getElementById('deposite-amount');
-    const depositAmountText = totalDepositField.innerText;
+// document.getElementById('deposit-btn').addEventListener('click',function () {
+//     const depositinputField = document.getElementById('deposit-input');
+//     const depositInputText = depositinputField.value;
+//     const depositInputTextParse = parseFloat(depositInputText);
+//     const depositAmountParse = getInputValue();
 
-    const depositAmountParse = parseFloat(depositAmountText);
+//     const totalDepositField = document.getElementById('deposite-amount');
+//     const depositAmountText = totalDepositField.innerText;
 
-    const Total = depositAmountParse + depositInputTextParse;
-    totalDepositField.innerText = Total
+//     const depositAmountParse = parseFloat(depositAmountText);
+//     totalDepositField.innerText = depositAmountParse + depositInputTextParse
 
-    // calculatin total 
-    const totalBalField = document.getElementById('total-bal');
-    const totalBalText = totalBalField.innerText;
-    const totalBalTextParse = parseFloat(totalBalText);
+//     // calculatin total 
+//     const totalBalField = document.getElementById('total-bal');
+//     const totalBalText = totalBalField.innerText;
+//     const totalBalTextParse = parseFloat(totalBalText);
 
-    totalBalField.innerText = depositInputTextParse + totalBalTextParse;
-// clear 
-   depositinputField.value = ''
-})
+//     totalBalField.innerText = depositInputTextParse + totalBalTextParse;
+// // clear 
+//    depositinputField.value = ''
+// })
 
-// withdraw
-document.getElementById('withdraw-btn').addEventListener('click',()=>{
-    const withdrawInput = document.getElementById('withdraw-input');
-    const withdrawText = withdrawInput.value;
-    const withdrawAmount = parseFloat(withdrawText);
+// // withdraw
+// document.getElementById('withdraw-btn').addEventListener('click',()=>{
+//     const withdrawInput = document.getElementById('withdraw-input');
+//     const withdrawText = withdrawInput.value;
+//     const withdrawAmount = parseFloat(withdrawText);
     
-    const withdrawField = document.getElementById('withdraw-amount');
-    const withdrawFieldText = withdrawField.innerText;
-    const withdrawFieldTextParse = parseFloat(withdrawFieldText);
+//     const withdrawField = document.getElementById('withdraw-amount');
+//     const withdrawFieldText = withdrawField.innerText;
+//     const withdrawFieldTextParse = parseFloat(withdrawFieldText);
 
-    withdrawField.innerText = withdrawAmount + withdrawFieldTextParse;
+//     withdrawField.innerText = withdrawAmount + withdrawFieldTextParse;
 
-    // total 
-    const total = document.getElementById('total-bal');
-    const totalText = total.innerText;
-    const totalTextparse = parseFloat(totalText);
-    total.innerText = totalTextparse - withdrawAmount;
+//     // total 
+//     const total = document.getElementById('total-bal');
+//     const totalText = total.innerText;
+//     const totalTextparse = parseFloat(totalText);
+//     total.innerText = totalTextparse - withdrawAmount;
 
-    // clear 
-    withdrawInput.value = '';
-})
+//     // clear 
+//     withdrawInput.value = '';
+// })
